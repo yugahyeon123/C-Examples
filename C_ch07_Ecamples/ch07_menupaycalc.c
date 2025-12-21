@@ -74,7 +74,7 @@ int main(void)
             Taxes = 300 * Fifteen + 150 * Twenty + (Grosspay - 450) * TwentyFive;
         Netpay = Grosspay - Taxes;
 
-        printf("총소득 %.2lf 세금 %.2lf 순소득 %.2lf\n ", Grosspay, Taxes, Netpay);
+        printf("총소득 %.2lf 세금 %.2lf 순소득 %.2lf\n", Grosspay, Taxes, Netpay);
     }
     return 0;
 }
