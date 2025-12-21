@@ -69,9 +69,9 @@ int main(void)
         if (Grosspay <= 300)
             Taxes = Grosspay * Fifteen;
         else if (Grosspay <= 450)
-            Taxes = Grosspay * Twenty;
+            Taxes = 300 * Fifteen + (Grosspay - 300) * Twenty;
         else
-            Taxes = Grosspay * TwentyFive;
+            Taxes = 300 * Fifteen + 150 * Twenty + (Grosspay - 450) * TwentyFive;
         Netpay = Grosspay - Taxes;
 
         printf("총소득 %.2lf 세금 %.2lf 순소득 %.2lf\n", Grosspay, Taxes, Netpay);
