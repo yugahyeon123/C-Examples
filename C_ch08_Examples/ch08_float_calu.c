@@ -67,28 +67,27 @@ int main(void)
             }
         }
 
-        if (Choice == 'a')
+        switch (Choice)
         {
+        case 'a': 
             result = FirstOperand + SecondOperand;
             printf("%f + %f = %f\n", FirstOperand, SecondOperand, result);
-        }
-
-        if (Choice == 's')
-        {
+            break;
+        
+        case 's' :
             result = FirstOperand - SecondOperand;
             printf("%f - %f = %f\n", FirstOperand, SecondOperand, result);
-        }
-
-        if (Choice == 'm')
-        {
+            break;
+        
+        case 'm' :
             result = FirstOperand * SecondOperand;
             printf("%f * %f = %f\n", FirstOperand, SecondOperand, result);
-        }
-
-        if (Choice == 'd')
-        {
+            break;
+        
+        case 'd' :
             result = FirstOperand / SecondOperand;
             printf("%f / %f = %f\n", FirstOperand, SecondOperand, result);
+            break;
         }
     }
     return 0;
